@@ -1,0 +1,224 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+     right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
+}
+.modal-backdrop.is-hidden .modal
+{
+    transform: translate(-50%, -50%) scale(1.3);}
+
+.modal {
+    width: 528px;
+    height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: $second-background-color;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px;
+    padding: 40px;
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
+
+}
+.modal-text {
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: calc (23 / 20);
+    color: var(--$primary-text-color);
+    margin-bottom: 30px;
+}
+
+.form-modal{
+    position:relative;
+    margin-bottom: 20px;
+    display: block;
+    margin: 0;
+    
+}
+.form-label{
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+    transform: translateY(-120%);
+
+    font-size: 12px;
+    font-weight: 400px;
+    color: $second-text-color;
+
+}
+.form-modal-line{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid $form-modal-color;
+    
+
+    margin-bottom: 28px;
+    cursor: pointer;
+position: relative;
+   
+}
+
+
+.comment {
+    resize: none;
+    height: 120px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+    padding-left: 16px;
+   
+}
+
+.form-modal-line::placeholder{
+    color: $texterea-color;
+   
+
+}
+.form-svg {
+    position: relative;
+    
+    
+}
+.svg-modal-form {
+    display: flex;
+    position: absolute;
+      justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 12px;
+    transform: translateY(60%);
+    fill: $primary-text-color;
+    
+}
+
+.check-mark-label {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.check-mark-icon {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $primary-text-color;
+    border-radius: 2px;
+    margin-right: 8px;
+  
+    }
+
+
+.check-mark-label .check-mark {
+    fill: transparent;
+}
+.check-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: $primary-text-color;
+    margin-bottom: 30px;
+ 
+}
+
+
+
+.check-mark-label {
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: calc (24 / 14);       
+    letter-spacing: 0.03em;
+    color: $second-text-color;
+
+}
+.check-mark input:checked + .check-mark-label .check-mark-span{
+    fill: $second-background-color;
+}
+.check-mark input:checked + .check-mark-label .check-mark-icon{
+    
+    background-color: $accent-color;
+    border: none;
+}
+.contract {
+    color: $accent-color;
+    border-bottom: 1px solid $accent-color;
+    letter-spacing: 0.03em;
+    margin-left: 8px;
+}
+input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none ;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+.form-modal-line:valid + .svg-modal-form,
+.form-modal-line:focus {
+    outline: $accent-color;
+    border-color: $accent-color;
+
+     }
+   
+.form-modal-line:valid,
+.form-modal-line:focus + .svg-modal-form{
+        fill: $accent-color;
+    }
+
+.comment:valid + .check-mark-span,
+.comment:focus {
+    outline: $accent-color;
+    border-color: #2196f2;
+     }
+
+.close-sing {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+.button-modal{
+    background-color: $accent-color;
+    color: $second-background-color;
+    padding: 10px 52px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid $accent-color;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: calc(30 /16);
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}

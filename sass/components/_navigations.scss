@@ -1,0 +1,133 @@
+.site-nav,
+.auto-nav {
+    display: flex;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    
+
+}
+.header-auto-nav{
+    padding-top: 32px ;
+    padding-bottom: 32px;
+}
+
+.link-nav-site:hover,
+.link-nav-site:focus {
+    color: $accent-color;
+}
+
+.header::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $inline-color;
+    left: 0;
+    bottom: -1px;
+    background-size: contain;
+}
+
+.link-nav-site {
+    position: relative;
+    padding-top: 32px ;
+    padding-bottom: 32px;
+    display: inline-block;
+    color: $primary-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+ 
+
+}
+
+.link-nav-site::after{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    left: 0;
+    bottom: -1px;
+    background-size: contain;
+
+}
+.link-nav-site.current::after {
+    width: 100%;
+    
+
+}
+.current {
+    color: $accent-color;
+}
+
+.site-nav .header-site-nav+.header-site-nav {
+margin-left: 50px;
+}
+
+
+
+
+.link-nav-auto {
+  
+    color: $second-text-color;
+    margin-right: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    display: flex;  
+   
+}
+.mail-tel-icons {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.link-nav-auto:hover,
+.link-nav-auto:focus {
+    color: $accent-color;
+    
+
+}
+
+
+
+.auto-nav:hover
+.auto-nav:focus {
+    color: $accent-color;
+
+}.auto-nav .header-auto-nav+ .header-auto-nav {
+    margin-left: 50px;
+
+    
+}
+
+
+
+.auto-nav {
+    margin-left: auto;
+    padding-left: 0;
+    color: $logo-text-color;
+}
+
+.conteiner-item { 
+    display: flex;
+    text-align: center;
+}
+.header {
+    position: relative;
+    
+}
+
+.conteiner-item::after .current {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $inline-color;
+    bottom:-1px;
+    left: 0;
+
+
+}

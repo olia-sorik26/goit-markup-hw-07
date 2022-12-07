@@ -1,3 +1,24 @@
+/*BASE*/
 @import "./base/variables";
 @import "./base/base";
+
+/*UTILS*/
 @import "./utils/visually-hidden";
+
+/*COMPONENTS*/
+@import "./components/logo";
+@import "./components/navigations";
+@import "./components/button";
+@import "./components/modals";
+
+/*LAYOUT*/
+@import "./layout/_hero";
+@import "./layout/about";
+@import "./layout/work";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer-logo";
+@import "./layout/footer-link";
+@import "./layout/fooler-button";
+@import "./layout/portfolio-button";
+@import "./layout/portfolio";
