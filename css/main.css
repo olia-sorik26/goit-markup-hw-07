@@ -2,7 +2,7 @@
 /*BASE*/
 body {
   color: #212121;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sant-serif;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ img {
   margin: -1px;
 }
 
-/*COMPONENTS*/
+/*LAYOUT*/
 .logo {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -76,7 +76,7 @@ img {
 }
 
 .span {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sant-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -487,18 +487,28 @@ input {
   pointer-events: none;
 }
 
-/*LAYOUT*/
-.conteiner-hero {
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
+  background-repeat: no-repeat;
   background-color: #2F303A;
-  background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(./img/team.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url("../../img/Img.png");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)), url("../../img/Img.png");
 }
 
-.hero-title {
+.hero__title {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -508,7 +518,7 @@ input {
   text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -520,8 +530,8 @@ input {
   cursor: pointer;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: #f5f5f5;
 }
 
