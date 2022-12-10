@@ -1,4 +1,4 @@
-.footer-button{
+.button-icon__button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,11 +18,11 @@
     display: flex;
 }
 
-.social-icon-button {
+.button-icon__button {
     margin-left: 10px;
 }
 
-.button-comment {
+.button-icon__comment {
     width: 357px;
     display: flex;
     flex-grow: 1;
@@ -37,7 +37,7 @@
     
 
 }
-.button-comment::placeholder {
+.button-icon__comment::placeholder {
     font-size: 16px;
     font-weight: normal;
     color: $rgba-color;

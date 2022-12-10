@@ -1,30 +1,30 @@
 .work {
-    padding-top: 0;
+    padding-bottom: 94px;
 }
-
-.conteiner-work {
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+}
+.conteiner__work {
     display: flex;
     align-items: center;
     padding-left: 0;
     gap: 30px; 
-    
-  
 }
-.i-tem{
+.conteiner__i-tem{
     width: calc((100% - 60px) / 3);
    
+}
+.conteiner__i-tem:nth-child(3n) {
+    margin-right: 0;}
 
-}
-.conteiner-work .i-tem:nth-child(3n) {
-    margin-right: 0;
-}
-.work-jpg {
+.card-work {
     position: relative;
-    
-
 }
 
-.dodatok {
+.card-work__dodatok {
     position: absolute;
     display: flex;
     align-items: center;
@@ -41,7 +41,3 @@
     text-transform: uppercase;
 }
 
-.title-work  {
-    margin-bottom: 0;
-    
-  }

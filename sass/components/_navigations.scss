@@ -1,23 +1,19 @@
 .site-nav,
-.auto-nav {
+.contact {
     display: flex;
-    
     margin-top: 0;
     margin-bottom: 0;
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    
-
 }
-.header-auto-nav{
+.contact__mail-tel{
     padding-top: 32px ;
     padding-bottom: 32px;
 }
 
-.link-nav-site:hover,
-.link-nav-site:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
     color: $accent-color;
 }
 
@@ -32,18 +28,16 @@
     background-size: contain;
 }
 
-.link-nav-site {
+.site-nav__link {
     position: relative;
     padding-top: 32px ;
     padding-bottom: 32px;
     display: inline-block;
     color: $primary-text-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
- 
-
 }
 
-.link-nav-site::after{
+.site-nav__link::after{
     content:"";
     position: absolute;
     width: 0%;
@@ -53,74 +47,62 @@
     left: 0;
     bottom: -1px;
     background-size: contain;
-
 }
-.link-nav-site.current::after {
+
+.site-nav__link.current::after {
     width: 100%;
-    
-
 }
+
 .current {
     color: $accent-color;
 }
 
-.site-nav .header-site-nav+.header-site-nav {
+.site-nav .site-nav__list+.site-nav__list {
 margin-left: 50px;
 }
 
-
-
-
-.link-nav-auto {
-  
+.contact__link {
     color: $second-text-color;
     margin-right: auto;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-    display: flex;  
-   
+    display: flex;    
 }
-.mail-tel-icons {
+
+.contact__icons {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.link-nav-auto:hover,
-.link-nav-auto:focus {
+.contact__link:hover,
+.contact__link:focus {
     color: $accent-color;
-    
-
 }
 
-
-
-.auto-nav:hover
-.auto-nav:focus {
+.contact:hover
+.contact:focus {
     color: $accent-color;
 
-}.auto-nav .header-auto-nav+ .header-auto-nav {
-    margin-left: 50px;
-
-    
+}
+.contact .contact__mail-tel+ .contact__mail-tel {
+    margin-left: 50px; 
 }
 
-
-
-.auto-nav {
+.contact {
     margin-left: auto;
     padding-left: 0;
     color: $logo-text-color;
 }
 
-.conteiner-item { 
+.conteiner__item { 
     display: flex;
     text-align: center;
 }
+
 .header {
-    position: relative;
-    
+    position: relative; 
 }
 
-.conteiner-item::after .current {
+.conteiner__item::after .current {
     content: "";
     position: absolute;
     width: 100%;
@@ -128,6 +110,4 @@ margin-left: 50px;
     background-color: $inline-color;
     bottom:-1px;
     left: 0;
-
-
 }

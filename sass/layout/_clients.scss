@@ -1,10 +1,14 @@
-.clients-baza {
+.client {
+    padding: 94px 0;
+
+}
+.clients {
     display: flex;
     justify-content: space-between;
     
    
 }
-.client-baza {
+.clients__baza {
     margin-right: 30px;
     padding: 16px 32px;
     border: 1px solid $icons-color;
@@ -13,23 +17,22 @@
     cursor: pointer;
 
 }
-.client-baza:last-child {
+.clients__baza:last-child {
     margin-right: 0;
     
 }
 
-    
-.client-baza-icon {
+.clients__icon {
     fill: $icons-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
-.client-baza:hover   {
+.clients__baza:hover   {
         fill: $accent-color;
         border-color: $accent-color;
     
     }
-.client-baza:hover .client-baza-svg {
+.clients__baza:hover .clients__svg {
     fill: $accent-color;
     border-color: $accent-color;
 }
