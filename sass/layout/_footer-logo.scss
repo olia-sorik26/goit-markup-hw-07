@@ -18,34 +18,34 @@
     color: $second-background-color;
 
 }
-.adress__i-tem {
-    margin-top: 20px;
-    margin-bottom: 0;
-    padding-left: 0;
+.adress {
+    &__i-tem {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__list {
+        margin-top: 9px;
+    }
+    &__footer{
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 400px;
+        font-size: 14px;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 0.6);
+        width: 1600px;
+        height: 648px;
+        left: 0px;
+        top: 2094px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__footer--adress{
+        color: $second-background-color;
+    }
 }
 
-
-.adress__footer{
-    font-style: normal;
-    text-decoration: none;
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 2094px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.adress__footer--adress{
-    color: $second-background-color;
-}
 .adress__footer:hover,
 .adress__footer:focus {
     color: $second-background-color;
-}
-.adress__list {
-    margin-top: 9px;
 }
