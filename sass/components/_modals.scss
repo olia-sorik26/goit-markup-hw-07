@@ -161,7 +161,14 @@
     border: none;
 }
 
-
+input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none ;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
 .form__line:valid + .form__image,
 .form__line:focus {
     outline: $accent-color;

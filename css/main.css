@@ -411,6 +411,15 @@ img {
   border: none;
 }
 
+input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
 .form__line:valid + .form__image,
 .form__line:focus {
   outline: #2196f2;
@@ -477,8 +486,8 @@ img {
   padding: 200px 0;
   background-repeat: no-repeat;
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url("../../img/Img.png");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)), url("../../img/Img.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url("../../img/team.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)), url("../../img/team.jpg");
 }
 .hero__title {
   margin-top: 0;
